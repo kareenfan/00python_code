@@ -97,3 +97,10 @@ def rendertest2(r):
 def get404(r):
     from django.views import defaults
     return defaults.page_not_found(r,exception='404.html')
+
+# 模板的if和for循环的标签使用
+def rendertest3(r):
+    c = dict()
+    c['score']=[11,22,33,44,55]
+    return render(r,template_name='templates.html',context=c)
+

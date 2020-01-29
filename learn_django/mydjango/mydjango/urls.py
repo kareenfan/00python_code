@@ -67,5 +67,7 @@ urlpatterns = [
     path(r'rendertest2/', myview.rendertest2),
 #     系统内置视图，可直接使用，例如404报错
     path(r'get404/',myview.get404),
+#    使用模板标签，返回一类值
+    path(r'rendertest3/',myview.rendertest3),
 
 ]

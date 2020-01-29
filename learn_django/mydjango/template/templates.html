@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签案例</title>
+</head>
+<body>
+    {% for s in score %}
+    <h1>
+        这个分数值是：{{s}} 分
+        {%if s == 22 %}
+        <h2 style="color:deepskyblue">你是一个小垃圾</h2>
+        {% elif s == 33 %}
+            你比小垃圾好一点
+        {% endif%}
+    </h1>
+    {% endfor%}
+
+</body>
+</html>
